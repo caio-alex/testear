@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Teste AR Básico</title>
+  <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+  <a-scene
+    webxr="optionalFeatures: hit-test;" 
+    ar-hit-test="target: #myobject;"
+  >
+    <a-box id="myobject" position="0 0.5 -2" rotation="0 45 0" color="#4CC3D9"></a-box>
+    <a-camera position="0 1.6 0"></a-camera>
+  </a-scene>
+</body>
+</html>
